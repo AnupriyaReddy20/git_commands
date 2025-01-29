@@ -1,1 +1,130 @@
-hello anupriya, learning git
+# Git Commands
+
+## 1. Initializing a Repository
+# Create a new repository
+git init
+
+# Clone an existing repository
+git clone <repository-url>
+
+## 2. Check the Status of Your Working Directory
+# View which files are modified, staged, or untracked
+git status
+
+## 3. Adding Changes
+# Add specific file(s) to staging
+git add <file-name>
+
+# Add all changes (including new, modified, and deleted files)
+git add .
+
+## 4. Committing Changes
+# Commit staged changes with a message
+git commit -m "Your commit message"
+
+## 5. View Commit History
+# See the commit history
+git log
+
+# Show the commit history in a simplified form
+git log --oneline
+
+## 6. Branching
+# Create a new branch
+git branch <branch-name>
+
+# Switch to a branch
+git checkout <branch-name>
+
+# Create and switch to a new branch
+git checkout -b <branch-name>
+
+## 7. Merging Branches
+# Merge another branch into the current branch
+git merge <branch-name>
+
+## 8. Viewing Differences
+# See changes between your working directory and the index (staging area)
+git diff
+
+# See changes between two branches
+git diff <branch1> <branch2>
+
+## 9. Remote Repositories
+# Add a remote repository
+git remote add origin <repository-url>
+
+# View your remote repositories
+git remote -v
+
+# Push changes to the remote repository
+git push origin <branch-name>
+
+# Pull changes from the remote repository
+git pull origin <branch-name>
+
+## 10. Tagging
+# Create a lightweight tag
+git tag <tag-name>
+
+# Create an annotated tag (recommended for releases)
+git tag -a <tag-name> -m "Tag message"
+
+# Push a tag to the remote repository
+git push origin <tag-name>
+
+# Push all tags to the remote repository
+git push --tags
+
+# List all tags
+git tag
+
+# Delete a tag locally
+git tag -d <tag-name>
+
+## 11. Undoing Changes
+# Undo changes in the working directory
+git checkout -- <file-name>
+
+# Unstage changes (remove from staging area)
+git reset <file-name>
+
+# Undo the last commit but keep changes staged
+git reset --soft HEAD~1
+
+# Undo the last commit and discard changes
+git reset --hard HEAD~1
+
+## 12. Deleting Branches
+# Delete a local branch
+git branch -d <branch-name>
+
+# Force delete a branch (use with caution)
+git branch -D <branch-name>
+
+# Delete a remote branch
+git push origin --delete <branch-name>
+
+## 13. Viewing Branches
+# List all branches (local and remote)
+git branch -a
+
+# List local branches
+git branch
+
+## 14. Stashing Changes
+# Save your changes temporarily (stash)
+git stash
+
+# Apply the latest stash
+git stash apply
+
+# List all stashes
+git stash list
+
+# Drop a specific stash
+git stash drop <stash-name>
+
+## 15. Rebasing
+# Rebase your current branch onto another branch
+git rebase <branch-name>
